@@ -185,7 +185,7 @@ FOR AGE PREDICTION''')
         st.write('\n\n')
         file=st.file_uploader('Upload the sample for prediction',type=['txt','csv'])
         if file:
-            tissue_type=st.selectbox('Select the tissue type', ('None','Leukocytes','Whole blood','Bone','Buccal swab'))
+            tissue_type=st.selectbox('Select the tissue type', ('Leukocytes','Whole blood','Bone','Buccal swab'))
 
         st.subheader('OR Use the tissue specific sample files:')
         sample_file=st.selectbox('Choose the model',['None','Leukocytes','Whole blood','Bone','Buccal swab'])
